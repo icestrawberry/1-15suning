@@ -1,0 +1,10 @@
+@charset "UTF-8";
+.adapterWidth( @index )when(@index > 0){
+  @media (min-width: extract(@screenWidthList,@index)) {
+    html{
+      font-size: @basefontSize / @psdWidth * extract(@screenWidthList,@index);
+    }
+  }
+
+  .adapterWidth(@index - 1);
+}

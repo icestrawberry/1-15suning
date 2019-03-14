@@ -1,0 +1,51 @@
+@charset "UTF-8";
+*,*::before,*::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+}
+body{
+  font-size: 14px;
+  font-family: "Microsoft YaHei" sans-serif;
+}
+input,textarea{
+  border:none;
+  outline: none;
+  resize: none;
+  -webkit-appearance:none;
+}
+
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #333;
+}
+
+.f_float{
+  float: left;
+}
+.f_right{
+  float: right;
+}
+.clearFix::before,
+.clearFix::after{
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+
+.sn_container{
+  margin: 0 auto;
+  max-width: 750px;
+  min-width: 320px;
+  width: 100%;
+  padding-top: 90rem / @baseFontSize;
+}
